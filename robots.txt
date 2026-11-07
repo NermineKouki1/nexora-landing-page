@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nerminekouki1.github.io/nexora-landing-page/sitemap.xml
