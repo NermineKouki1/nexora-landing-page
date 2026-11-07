@@ -4,11 +4,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Nexora, startup tunisienne de solutions numériques intelligentes : développement web, applications mobiles, IA et conseil.">
+  <meta property="og:title" content="Nexora - Startup de solutions numériques">
+  <meta property="og:description" content="Nexora accompagne les entreprises dans leur transformation digitale à Sousse, Tunisie.">
+  <meta property="og:image" content="https://nerminekouki1.github.io/nexora-landing-page/images/hero.svg">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://nerminekouki1.github.io/nexora-landing-page/">
   <title>Nexora - Startup de solutions numériques</title>
   <link rel="icon" href="images/logo.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Nexora",
+    "description": "Startup fictive de solutions numériques à Sousse, Tunisie.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Technopôle de Sousse",
+      "postalCode": "4000",
+      "addressLocality": "Sousse",
+      "addressCountry": "TN"
+    },
+    "email": "contact@nexora.example",
+    "telephone": "+216 73 000 000"
+  }
+  </script>
 </head>
 <body>
+  <a href="#contenu-principal" class="skip-link">Aller au contenu principal</a>
 
   <header class="site-header">
     <div class="container bar">
@@ -16,40 +40,40 @@
         <img src="images/logo.svg" alt="" width="36" height="36">
         <span>Nexora</span>
       </a>
-      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Afficher le menu">
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Afficher le menu" aria-controls="main-menu">
       <label for="menu-toggle" class="burger" title="Menu"><span></span></label>
-      <nav class="main-nav" aria-label="Navigation principale">
+      <nav id="main-menu" class="main-nav" aria-label="Navigation principale">
         <ul>
           <li><a href="#accueil">Accueil</a></li>
           <li><a href="#apropos">À propos</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#equipe">Équipe</a></li>
+          <li><a href="#temoignages">Témoignages</a></li>
           <li><a class="btn-nav" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
-
-    <section id="accueil" class="hero">
+  <main id="contenu-principal">
+    <section id="accueil" class="hero" aria-labelledby="titre-accueil">
       <div class="container hero-grid">
         <div class="hero-text">
           <p class="eyebrow">Startup · Sousse, Tunisie</p>
-          <h1>Nous transformons vos idées en <span class="accent">solutions numériques</span> intelligentes</h1>
+          <h1 id="titre-accueil">Nous transformons vos idées en <span class="accent">solutions numériques</span> intelligentes</h1>
           <p class="lead">Nexora accompagne les entreprises dans leur transformation digitale : sites web, applications et intelligence artificielle, du prototype à la mise en production.</p>
           <div class="actions">
             <a class="btn btn-primary" href="#contact">Démarrer un projet</a>
             <a class="btn btn-ghost" href="#services">Découvrir nos services</a>
           </div>
         </div>
-        <div class="hero-visual">
+        <div class="hero-visual" data-reveal>
           <img src="images/hero.svg" alt="Illustration d'un tableau de bord analytique" width="520" height="400">
         </div>
       </div>
     </section>
 
-    <section id="apropos" class="section" aria-labelledby="titre-apropos">
+    <section id="apropos" class="section" aria-labelledby="titre-apropos" data-reveal>
       <div class="container">
         <h2 id="titre-apropos" class="section-title">À propos</h2>
         <p class="section-intro">Une jeune équipe passionnée, convaincue que la technologie doit être simple, utile et accessible.</p>
@@ -64,36 +88,36 @@
               <li>Accessibilité</li>
             </ul>
           </div>
-          <div class="stats">
-            <div class="stat"><strong>25+</strong><span>Projets livrés</span></div>
-            <div class="stat"><strong>12</strong><span>Clients satisfaits</span></div>
-            <div class="stat"><strong>5</strong><span>Experts passionnés</span></div>
+          <div class="stats" aria-label="Chiffres clés">
+            <div class="stat"><strong data-count="25" data-suffix="+">25+</strong><span>Projets livrés</span></div>
+            <div class="stat"><strong data-count="12">12</strong><span>Clients satisfaits</span></div>
+            <div class="stat"><strong data-count="5">5</strong><span>Experts passionnés</span></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="services" class="section section-alt" aria-labelledby="titre-services">
+    <section id="services" class="section section-alt" aria-labelledby="titre-services" data-reveal>
       <div class="container">
         <h2 id="titre-services" class="section-title">Nos services</h2>
         <p class="section-intro">Des solutions complètes pour concevoir, développer et faire grandir vos produits numériques.</p>
         <div class="cards">
-          <article class="card">
+          <article class="card" data-reveal>
             <div class="icon" aria-hidden="true">&lt;/&gt;</div>
             <h3>Développement web</h3>
             <p>Sites vitrines et applications web responsives, rapides et conformes aux standards du W3C.</p>
           </article>
-          <article class="card">
+          <article class="card" data-reveal>
             <div class="icon" aria-hidden="true">&#9638;</div>
             <h3>Applications mobiles</h3>
             <p>Applications fluides et intuitives pour Android et iOS, pensées pour vos utilisateurs.</p>
           </article>
-          <article class="card">
+          <article class="card" data-reveal>
             <div class="icon" aria-hidden="true">&#10022;</div>
             <h3>Intelligence artificielle</h3>
             <p>Analyse de données, chatbots et automatisation pour gagner du temps et mieux décider.</p>
           </article>
-          <article class="card">
+          <article class="card" data-reveal>
             <div class="icon" aria-hidden="true">&#9998;</div>
             <h3>UI / UX Design</h3>
             <p>Maquettes et interfaces soignées, avec une identité visuelle cohérente et moderne.</p>
@@ -102,24 +126,24 @@
       </div>
     </section>
 
-    <section id="equipe" class="section" aria-labelledby="titre-equipe">
+    <section id="equipe" class="section" aria-labelledby="titre-equipe" data-reveal>
       <div class="container">
         <h2 id="titre-equipe" class="section-title">Notre équipe</h2>
         <p class="section-intro">Des profils complémentaires réunis autour d'une même ambition.</p>
         <div class="cards team">
-          <article class="card member">
+          <article class="card member" data-reveal>
             <img src="images/membre1.svg" alt="Portrait de Sami Ben Salah" width="120" height="120">
             <h3>Sami Ben Salah</h3>
             <p class="role">Fondateur &amp; CEO</p>
             <p>Stratégie produit et relation client.</p>
           </article>
-          <article class="card member">
+          <article class="card member" data-reveal>
             <img src="images/membre2.svg" alt="Portrait de Yasmine Trabelsi" width="120" height="120">
             <h3>Yasmine Trabelsi</h3>
             <p class="role">Directrice technique</p>
             <p>Architecture logicielle et intelligence artificielle.</p>
           </article>
-          <article class="card member">
+          <article class="card member" data-reveal>
             <img src="images/membre3.svg" alt="Portrait de Karim Jlassi" width="120" height="120">
             <h3>Karim Jlassi</h3>
             <p class="role">Responsable design</p>
@@ -129,7 +153,43 @@
       </div>
     </section>
 
-    <section id="contact" class="section section-alt" aria-labelledby="titre-contact">
+    <section id="temoignages" class="section temoignages section-alt" aria-roledescription="carrousel" aria-label="Témoignages clients" data-reveal>
+      <div class="container">
+        <h2 id="titre-temoignages" class="section-title">Ils nous font confiance</h2>
+        <p class="section-intro">Les retours de clients qui ont fait grandir leur activité avec Nexora.</p>
+        <div class="carousel" role="group" aria-labelledby="titre-temoignages" tabindex="0">
+          <div class="carousel-viewport">
+            <div class="carousel-track">
+              <div class="testimonial" role="group" aria-roledescription="diapositive" aria-label="1 sur 4">
+                <blockquote>« L'équipe Nexora a compris nos besoins et créé une boutique en ligne simple à gérer. »</blockquote>
+                <p class="testimonial-author"><strong>Amel Chaabane</strong><span>Gérante, Boutique Dar Zitouna</span></p>
+              </div>
+              <div class="testimonial" role="group" aria-roledescription="diapositive" aria-label="2 sur 4">
+                <blockquote>« Notre nouvelle présence numérique nous permet de mieux présenter nos services et de gagner du temps. »</blockquote>
+                <p class="testimonial-author"><strong>Walid Ben Amor</strong><span>Directeur, Sousse Conseil</span></p>
+              </div>
+              <div class="testimonial" role="group" aria-roledescription="diapositive" aria-label="3 sur 4">
+                <blockquote>« Une collaboration fluide et une application mobile qui répond vraiment aux attentes de nos clients. »</blockquote>
+                <p class="testimonial-author"><strong>Rim Gharbi</strong><span>Fondatrice, Green Market</span></p>
+              </div>
+              <div class="testimonial" role="group" aria-roledescription="diapositive" aria-label="4 sur 4">
+                <blockquote>« Une équipe à l'écoute, des conseils concrets et un résultat soigné livré dans les délais. »</blockquote>
+                <p class="testimonial-author"><strong>Hatem Karray</strong><span>Responsable, Atelier K</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <button class="carousel-arrow carousel-prev" type="button" aria-label="Témoignage précédent">&#8592;</button>
+            <div class="carousel-dots" aria-label="Choisir un témoignage"></div>
+            <button class="carousel-arrow carousel-next" type="button" aria-label="Témoignage suivant">&#8594;</button>
+            <button class="btn-pause" type="button" aria-label="Mettre en pause le carrousel">Pause</button>
+          </div>
+          <p class="visually-hidden carousel-status" aria-live="polite" aria-atomic="true"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt" aria-labelledby="titre-contact" data-reveal>
       <div class="container">
         <h2 id="titre-contact" class="section-title">Contact</h2>
         <p class="section-intro">Un projet, une question ? Écrivez-nous, nous répondons sous 24 heures.</p>
@@ -137,11 +197,18 @@
           <form class="contact-form" action="#" method="post">
             <div class="field">
               <label for="nom">Nom complet</label>
-              <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+              <input type="text" id="nom" name="nom" placeholder="Votre nom" autocomplete="name" required minlength="3" aria-describedby="erreur-nom">
+              <p class="error-message" id="erreur-nom" aria-live="polite"></p>
             </div>
             <div class="field">
               <label for="email">Adresse e-mail</label>
-              <input type="email" id="email" name="email" placeholder="vous@exemple.com" required>
+              <input type="email" id="email" name="email" placeholder="vous@exemple.com" autocomplete="email" required aria-describedby="erreur-email">
+              <p class="error-message" id="erreur-email" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="telephone">Téléphone <span>(facultatif)</span></label>
+              <input type="tel" id="telephone" name="telephone" placeholder="+216 12 345 678" autocomplete="tel" aria-describedby="erreur-telephone">
+              <p class="error-message" id="erreur-telephone" aria-live="polite"></p>
             </div>
             <div class="field">
               <label for="sujet">Sujet</label>
@@ -154,9 +221,17 @@
             </div>
             <div class="field">
               <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet..." required></textarea>
+              <textarea id="message" name="message" rows="5" placeholder="Décrivez votre projet..." required minlength="20" maxlength="500" aria-describedby="erreur-message compteur-message"></textarea>
+              <p class="error-message" id="erreur-message" aria-live="polite"></p>
+              <p class="character-counter" id="compteur-message" aria-live="polite">0 / 500</p>
+            </div>
+            <div class="field consent-field">
+              <input type="checkbox" id="consent" name="consent" required aria-describedby="erreur-consent">
+              <label for="consent">J'accepte que mes informations soient utilisées pour répondre à ma demande.</label>
+              <p class="error-message" id="erreur-consent" aria-live="polite"></p>
             </div>
             <button type="submit" class="btn btn-primary">Envoyer le message</button>
+            <p class="form-success" role="status" aria-live="polite" hidden></p>
           </form>
           <aside class="coords" aria-label="Coordonnées">
             <h3>Nos coordonnées</h3>
@@ -168,15 +243,27 @@
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="site-footer">
     <div class="container foot">
       <p>&copy; 2026 Nexora - Projet pédagogique fictif.</p>
       <p><a href="pages/mentions-legales.html">Mentions légales</a> · <a href="#accueil">Retour en haut ↑</a></p>
+      <button id="btn-reafficher-offre" class="link-btn" type="button">Réafficher l'offre</button>
     </div>
   </footer>
 
+  <dialog id="modal-offre" class="modal-offre" aria-labelledby="modal-titre">
+    <button class="modal-close" type="button" aria-label="Fermer la boîte de dialogue">&times;</button>
+    <p class="eyebrow">OFFRE DE LANCEMENT</p>
+    <h3 id="modal-titre">Audit numérique gratuit</h3>
+    <p>Faisons le point sur votre présence numérique et identifions ensemble des pistes concrètes pour votre projet.</p>
+    <div class="modal-actions">
+      <a class="btn btn-primary modal-reserve" href="#contact">Réserver mon audit</a>
+      <button class="btn btn-ghost modal-later" type="button">Plus tard</button>
+    </div>
+  </dialog>
+
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>
